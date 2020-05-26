@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
-use Test\Vendor\Amp\Parallel\Context\Parallel;
-use Test\Vendor\Amp\Parallel\Context\Thread;
+use Amp\Parallel\Context\Parallel;
+use Amp\Parallel\Context\Thread;
 
 /**
  * Worker factory that includes a custom bootstrap file after initializing the worker.
@@ -18,8 +18,8 @@ final class BootstrapWorkerFactory implements WorkerFactory
 
     /**
      * @param string $bootstrapFilePath Path to custom bootstrap file.
-     * @param string $envClassName      Name of class implementing \Test\Vendor\Amp\Parallel\Worker\Environment to instigate in each
-     *     worker. Defaults to \Test\Vendor\Amp\Parallel\Worker\BasicEnvironment.
+     * @param string $envClassName      Name of class implementing \Amp\Parallel\Worker\Environment to instigate in each
+     *     worker. Defaults to \Amp\Parallel\Worker\BasicEnvironment.
      *
      * @throws \Error If the given class name does not exist or does not implement {@see Environment}.
      */

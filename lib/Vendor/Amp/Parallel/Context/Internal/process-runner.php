@@ -1,12 +1,12 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context\Internal;
+namespace Amp\Parallel\Context\Internal;
 
-use Test\Vendor\Amp\Parallel\Context\Process;
-use Test\Vendor\Amp\Parallel\Sync;
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\call;
-use function Test\Vendor\Amp\getCurrentTime;
+use Amp\Parallel\Context\Process;
+use Amp\Parallel\Sync;
+use Amp\Promise;
+use function Amp\call;
+use function Amp\getCurrentTime;
 
 \define("AMP_CONTEXT", "process");
 \define("AMP_CONTEXT_ID", \getmypid());

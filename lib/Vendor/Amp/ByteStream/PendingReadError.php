@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
 /**
  * Thrown in case a second read operation is attempted while another read operation is still pending.

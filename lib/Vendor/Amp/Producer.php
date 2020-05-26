@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 /**
  * @template-covariant TValue

@@ -1,16 +1,16 @@
 <?php
 
-namespace Test\Vendor\Amp\Internal;
+namespace Amp\Internal;
 
-use Test\Vendor\Amp\Coroutine;
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Promise;
+use Amp\Coroutine;
+use Amp\Failure;
+use Amp\Loop;
+use Amp\Promise;
 use React\Promise\PromiseInterface as ReactPromise;
 
 /**
  * Trait used by Promise implementations. Do not use this trait in your code, instead compose your class from one of
- * the available classes implementing \Test\Vendor\Amp\Promise.
+ * the available classes implementing \Amp\Promise.
  *
  * @internal
  */

@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /**
  * A non-blocking counting semaphore based on keys.

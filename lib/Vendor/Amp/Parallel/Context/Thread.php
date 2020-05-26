@@ -1,15 +1,15 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context;
+namespace Amp\Parallel\Context;
 
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Parallel\Sync\ChannelledSocket;
-use Test\Vendor\Amp\Parallel\Sync\ExitResult;
-use Test\Vendor\Amp\Parallel\Sync\SynchronizationError;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
-use function Test\Vendor\Amp\call;
+use Amp\Failure;
+use Amp\Loop;
+use Amp\Parallel\Sync\ChannelledSocket;
+use Amp\Parallel\Sync\ExitResult;
+use Amp\Parallel\Sync\SynchronizationError;
+use Amp\Promise;
+use Amp\Success;
+use function Amp\call;
 
 /**
  * Implements an execution context using native multi-threading.
@@ -65,7 +65,7 @@ final class Thread implements Context
      * Creates and starts a new thread.
      *
      * @param callable $function The callable to invoke in the thread. First argument is an instance of
-     *     \Test\Vendor\Amp\Parallel\Sync\Channel.
+     *     \Amp\Parallel\Sync\Channel.
      * @param mixed ...$args Additional arguments to pass to the given callable.
      *
      * @return Promise<Thread> The thread object that was spawned.
@@ -83,7 +83,7 @@ final class Thread implements Context
      * Creates a new thread.
      *
      * @param callable $function The callable to invoke in the thread. First argument is an instance of
-     *     \Test\Vendor\Amp\Parallel\Sync\Channel.
+     *     \Amp\Parallel\Sync\Channel.
      * @param mixed ...$args Additional arguments to pass to the given callable.
      *
      * @throws \Error Thrown if the pthreads extension is not available.
@@ -113,7 +113,7 @@ final class Thread implements Context
     /**
      * Kills the thread if it is still running.
      *
-     * @throws \Test\Vendor\Amp\Parallel\Context\ContextException
+     * @throws \Amp\Parallel\Context\ContextException
      */
     public function __destruct()
     {
@@ -137,8 +137,8 @@ final class Thread implements Context
      *
      * @return Promise<int> Resolved once the thread has started.
      *
-     * @throws \Test\Vendor\Amp\Parallel\Context\StatusError If the thread has already been started.
-     * @throws \Test\Vendor\Amp\Parallel\Context\ContextException If starting the thread was unsuccessful.
+     * @throws \Amp\Parallel\Context\StatusError If the thread has already been started.
+     * @throws \Amp\Parallel\Context\ContextException If starting the thread was unsuccessful.
      */
     public function start(): Promise
     {
@@ -222,7 +222,7 @@ final class Thread implements Context
      * Gets a promise that resolves when the context ends and joins with the
      * parent context.
      *
-     * @return \Test\Vendor\Amp\Promise<mixed>
+     * @return \Amp\Promise<mixed>
      *
      * @throws StatusError Thrown if the context has not been started.
      * @throws SynchronizationError Thrown if an exit status object is not received.
@@ -317,7 +317,7 @@ final class Thread implements Context
      *
      * @return int
      *
-     * @throws \Test\Vendor\Amp\Process\StatusError
+     * @throws \Amp\Process\StatusError
      */
     public function getId(): int
     {

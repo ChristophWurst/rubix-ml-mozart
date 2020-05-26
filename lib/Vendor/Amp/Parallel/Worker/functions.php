@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Promise;
+use Amp\Loop;
+use Amp\Promise;
 
 const LOOP_POOL_IDENTIFIER = Pool::class;
 const LOOP_FACTORY_IDENTIFIER = WorkerFactory::class;
@@ -58,7 +58,7 @@ function enqueueCallable(callable $callable, ...$args)
 /**
  * Gets a worker from the global worker pool.
  *
- * @return \Test\Vendor\Amp\Parallel\Worker\Worker
+ * @return \Amp\Parallel\Worker\Worker
  */
 function worker(): Worker
 {
@@ -68,7 +68,7 @@ function worker(): Worker
 /**
  * Creates a worker using the global worker factory.
  *
- * @return \Test\Vendor\Amp\Parallel\Worker\Worker
+ * @return \Amp\Parallel\Worker\Worker
  */
 function create(): Worker
 {

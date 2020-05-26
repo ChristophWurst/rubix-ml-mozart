@@ -1,12 +1,12 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 use React\Promise\PromiseInterface as ReactPromise;
 
 /**
  * Creates a successful promise using the given value (which can be any value except an object implementing
- * `Test\Vendor\Amp\Promise` or `React\Promise\PromiseInterface`).
+ * `Amp\Promise` or `React\Promise\PromiseInterface`).
  *
  * @template-covariant TValue
  * @template-implements Promise<TValue>

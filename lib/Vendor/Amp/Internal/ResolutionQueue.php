@@ -1,17 +1,17 @@
 <?php
 
-namespace Test\Vendor\Amp\Internal;
+namespace Amp\Internal;
 
-use Test\Vendor\Amp\Coroutine;
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Promise;
+use Amp\Coroutine;
+use Amp\Loop;
+use Amp\Promise;
 use React\Promise\PromiseInterface as ReactPromise;
 
 /**
  * Stores a set of functions to be invoked when a promise is resolved.
  *
  * @internal
- * @psalm-internal Test\Vendor\Amp\Internal
+ * @psalm-internal Amp\Internal
  */
 class ResolutionQueue
 {

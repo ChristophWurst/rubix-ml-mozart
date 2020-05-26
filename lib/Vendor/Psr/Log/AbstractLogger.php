@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Psr\Log;
+namespace Psr\Log;
 
 /**
  * This is a simple Logger implementation that other Loggers can inherit from.

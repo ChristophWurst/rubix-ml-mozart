@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
 /**
  * Task implementation dispatching a simple callable.

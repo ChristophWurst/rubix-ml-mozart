@@ -1,14 +1,14 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\call;
+use Amp\Promise;
+use function Amp\call;
 
 /**
  * Invokes the given callback while maintaining a lock from the provided mutex. The lock is automatically released after
  * invoking the callback or once the promise returned by the callback is resolved. If the callback returns a Generator,
- * it will be run as a coroutine. See Test\Vendor\Amp\call().
+ * it will be run as a coroutine. See Amp\call().
  *
  * @param Mutex    $mutex
  * @param callable $callback

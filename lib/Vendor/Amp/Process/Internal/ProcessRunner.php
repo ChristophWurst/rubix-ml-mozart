@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Process\Internal;
+namespace Amp\Process\Internal;
 
-use Test\Vendor\Amp\Process\ProcessException;
-use Test\Vendor\Amp\Promise;
+use Amp\Process\ProcessException;
+use Amp\Promise;
 
 interface ProcessRunner
 {

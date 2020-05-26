@@ -1,12 +1,12 @@
 <?php /** @noinspection PhpComposerExtensionStubsInspection */
 
-namespace Test\Vendor\Amp\Loop;
+namespace Amp\Loop;
 
-use Test\Vendor\Amp\Coroutine;
-use Test\Vendor\Amp\Promise;
+use Amp\Coroutine;
+use Amp\Promise;
 use React\Promise\PromiseInterface as ReactPromise;
-use function Test\Vendor\Amp\Internal\getCurrentTime;
-use function Test\Vendor\Amp\Promise\rethrow;
+use function Amp\Internal\getCurrentTime;
+use function Amp\Promise\rethrow;
 
 class EvDriver extends Driver
 {

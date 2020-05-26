@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp\Process\Internal;
+namespace Amp\Process\Internal;
 
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Process\ProcessInputStream;
-use Test\Vendor\Amp\Process\ProcessOutputStream;
-use Test\Vendor\Amp\Struct;
+use Amp\Deferred;
+use Amp\Process\ProcessInputStream;
+use Amp\Process\ProcessOutputStream;
+use Amp\Struct;
 
 abstract class ProcessHandle
 {

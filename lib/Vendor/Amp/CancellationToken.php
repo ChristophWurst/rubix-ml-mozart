@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 /**
  * Cancellation tokens are simple objects that allow registering handlers to subscribe to cancellation requests.

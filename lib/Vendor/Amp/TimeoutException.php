@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 /**
  * Thrown if a promise doesn't resolve within a specified timeout.
  *
- * @see \Test\Vendor\Amp\Promise\timeout()
+ * @see \Amp\Promise\timeout()
  */
 class TimeoutException extends \Exception
 {

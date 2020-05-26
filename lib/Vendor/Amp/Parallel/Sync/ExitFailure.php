@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync;
+namespace Amp\Parallel\Sync;
 
 final class ExitFailure implements ExitResult
 {

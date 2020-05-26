@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
 /**
  * Common interface for exceptions thrown when Task::run() throws an exception when being executed in a worker.

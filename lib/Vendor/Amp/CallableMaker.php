@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 // @codeCoverageIgnoreStart
 if (\PHP_VERSION_ID < 70100) {

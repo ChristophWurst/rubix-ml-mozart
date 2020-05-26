@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Internal;
+namespace Amp\Internal;
 
 /**
  * Formats a stacktrace obtained via `debug_backtrace()`.

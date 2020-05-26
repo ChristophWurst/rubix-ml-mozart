@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 /**
  * Will be thrown in case an operation is cancelled.

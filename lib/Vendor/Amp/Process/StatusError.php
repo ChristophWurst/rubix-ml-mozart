@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Process;
+namespace Amp\Process;
 
 class StatusError extends \Error
 {

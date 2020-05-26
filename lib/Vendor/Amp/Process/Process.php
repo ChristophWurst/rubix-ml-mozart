@@ -1,15 +1,15 @@
 <?php
 
-namespace Test\Vendor\Amp\Process;
+namespace Amp\Process;
 
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Process\Internal\Posix\Runner as PosixProcessRunner;
-use Test\Vendor\Amp\Process\Internal\ProcessHandle;
-use Test\Vendor\Amp\Process\Internal\ProcessRunner;
-use Test\Vendor\Amp\Process\Internal\ProcessStatus;
-use Test\Vendor\Amp\Process\Internal\Windows\Runner as WindowsProcessRunner;
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\call;
+use Amp\Loop;
+use Amp\Process\Internal\Posix\Runner as PosixProcessRunner;
+use Amp\Process\Internal\ProcessHandle;
+use Amp\Process\Internal\ProcessRunner;
+use Amp\Process\Internal\ProcessStatus;
+use Amp\Process\Internal\Windows\Runner as WindowsProcessRunner;
+use Amp\Promise;
+use function Amp\call;
 
 final class Process
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Iterator;
-use Test\Vendor\Amp\Promise;
+use Amp\Deferred;
+use Amp\Failure;
+use Amp\Iterator;
+use Amp\Promise;
 
 final class IteratorStream implements InputStream
 {

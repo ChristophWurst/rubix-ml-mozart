@@ -1,17 +1,17 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync\ConcurrentIterator;
+namespace Amp\Sync\ConcurrentIterator;
 
-use Test\Vendor\Amp\CancelledException;
-use Test\Vendor\Amp\Iterator;
-use Test\Vendor\Amp\Producer;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Sync\Barrier;
-use Test\Vendor\Amp\Sync\Lock;
-use Test\Vendor\Amp\Sync\Semaphore;
-use function Test\Vendor\Amp\asyncCall;
-use function Test\Vendor\Amp\call;
-use function Test\Vendor\Amp\coroutine;
+use Amp\CancelledException;
+use Amp\Iterator;
+use Amp\Producer;
+use Amp\Promise;
+use Amp\Sync\Barrier;
+use Amp\Sync\Lock;
+use Amp\Sync\Semaphore;
+use function Amp\asyncCall;
+use function Amp\call;
+use function Amp\coroutine;
 
 /**
  * Concurrently act on iterator values using {@code $processor}.
@@ -166,7 +166,7 @@ function each(Iterator $iterator, Semaphore $semaphore, callable $processor): Pr
         }
     );
 
-    // Use Test\Vendor\Amp\Iterator\discard in the future
+    // Use Amp\Iterator\discard in the future
     return call(static function () use ($iterator) {
         $count = 0;
 

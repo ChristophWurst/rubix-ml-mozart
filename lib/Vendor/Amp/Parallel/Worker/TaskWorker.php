@@ -1,15 +1,15 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Parallel\Context\Context;
-use Test\Vendor\Amp\Parallel\Context\StatusError;
-use Test\Vendor\Amp\Parallel\Sync\ChannelException;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
-use Test\Vendor\Amp\TimeoutException;
-use function Test\Vendor\Amp\call;
+use Amp\Failure;
+use Amp\Parallel\Context\Context;
+use Amp\Parallel\Context\StatusError;
+use Amp\Parallel\Sync\ChannelException;
+use Amp\Promise;
+use Amp\Success;
+use Amp\TimeoutException;
+use function Amp\call;
 
 /**
  * Base class for most common types of task workers.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Loop\Internal;
+namespace Amp\Loop\Internal;
 
-use Test\Vendor\Amp\Loop\Watcher;
+use Amp\Loop\Watcher;
 
 /**
  * Uses a binary tree stored in an array to implement a heap.

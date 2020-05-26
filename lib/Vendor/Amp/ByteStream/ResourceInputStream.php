@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
+use Amp\Deferred;
+use Amp\Loop;
+use Amp\Promise;
+use Amp\Success;
 
 /**
  * Input stream abstraction for PHP's stream resources.

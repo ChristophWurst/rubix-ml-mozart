@@ -1,12 +1,12 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
-use Test\Vendor\Amp\Coroutine;
-use Test\Vendor\Amp\Parallel\Sync\Channel;
-use Test\Vendor\Amp\Parallel\Sync\SerializationException;
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\call;
+use Amp\Coroutine;
+use Amp\Parallel\Sync\Channel;
+use Amp\Parallel\Sync\SerializationException;
+use Amp\Promise;
+use function Amp\call;
 
 final class TaskRunner
 {
@@ -25,7 +25,7 @@ final class TaskRunner
     /**
      * Runs the task runner, receiving tasks from the parent and sending the result of those tasks.
      *
-     * @return \Test\Vendor\Amp\Promise
+     * @return \Amp\Promise
      */
     public function run(): Promise
     {

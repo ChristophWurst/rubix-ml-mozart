@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context;
+namespace Amp\Parallel\Context;
 
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Promise;
+use Amp\Loop;
+use Amp\Promise;
 
 const LOOP_FACTORY_IDENTIFIER = ContextFactory::class;
 

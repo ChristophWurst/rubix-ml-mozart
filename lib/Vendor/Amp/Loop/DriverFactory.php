@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Loop;
+namespace Amp\Loop;
 
 // @codeCoverageIgnoreStart
 class DriverFactory

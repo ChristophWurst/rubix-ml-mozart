@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /**
  * Allows compression of output streams using Zlib.

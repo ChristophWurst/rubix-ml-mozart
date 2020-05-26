@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /**
  * An asynchronous semaphore based on pthreads' synchronization methods.

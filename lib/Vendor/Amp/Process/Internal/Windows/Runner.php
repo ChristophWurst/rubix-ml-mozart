@@ -1,17 +1,17 @@
 <?php
 
-namespace Test\Vendor\Amp\Process\Internal\Windows;
+namespace Amp\Process\Internal\Windows;
 
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Process\Internal\ProcessHandle;
-use Test\Vendor\Amp\Process\Internal\ProcessRunner;
-use Test\Vendor\Amp\Process\Internal\ProcessStatus;
-use Test\Vendor\Amp\Process\ProcessException;
-use Test\Vendor\Amp\Process\ProcessInputStream;
-use Test\Vendor\Amp\Process\ProcessOutputStream;
-use Test\Vendor\Amp\Promise;
-use const Test\Vendor\Amp\Process\BIN_DIR;
+use Amp\Deferred;
+use Amp\Loop;
+use Amp\Process\Internal\ProcessHandle;
+use Amp\Process\Internal\ProcessRunner;
+use Amp\Process\Internal\ProcessStatus;
+use Amp\Process\ProcessException;
+use Amp\Process\ProcessInputStream;
+use Amp\Process\ProcessOutputStream;
+use Amp\Promise;
+use const Amp\Process\BIN_DIR;
 
 /**
  * @internal

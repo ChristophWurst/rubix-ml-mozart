@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /**
  * An `InputStream` allows reading byte streams in chunks.
@@ -11,7 +11,7 @@ use Test\Vendor\Amp\Promise;
  *
  * ```php
  * function readAll(InputStream $in): Promise {
- *     return Test\Vendor\Amp\call(function () use ($in) {
+ *     return Amp\call(function () use ($in) {
  *         $buffer = "";
  *
  *         while (($chunk = yield $in->read()) !== null) {

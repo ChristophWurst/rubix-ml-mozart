@@ -1,12 +1,12 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Coroutine;
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
+use Amp\Coroutine;
+use Amp\Deferred;
+use Amp\Failure;
+use Amp\Promise;
+use Amp\Success;
 
 /**
  * Creates a buffered message from an InputStream. The message can be consumed in chunks using the read() API or it may
@@ -28,7 +28,7 @@ use Test\Vendor\Amp\Success;
  *     // Immediately use $chunk, reducing memory consumption since the entire message is never buffered.
  * }
  *
- * @deprecated Use Test\Vendor\Amp\ByteStream\Payload instead.
+ * @deprecated Use Amp\ByteStream\Payload instead.
  */
 class Message implements InputStream, Promise
 {

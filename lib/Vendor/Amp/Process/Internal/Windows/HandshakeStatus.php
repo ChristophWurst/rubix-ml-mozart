@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Process\Internal\Windows;
+namespace Amp\Process\Internal\Windows;
 
 /**
  * @internal

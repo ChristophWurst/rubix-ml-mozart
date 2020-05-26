@@ -1,10 +1,10 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
-use Test\Vendor\Amp\Parallel\Context\StatusError;
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\asyncCall;
+use Amp\Parallel\Context\StatusError;
+use Amp\Promise;
+use function Amp\asyncCall;
 
 /**
  * Provides a pool of workers that can be used to execute multiple tasks asynchronously.

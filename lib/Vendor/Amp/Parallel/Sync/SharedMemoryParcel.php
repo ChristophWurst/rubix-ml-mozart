@@ -1,14 +1,14 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync;
+namespace Amp\Parallel\Sync;
 
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Serialization\NativeSerializer;
-use Test\Vendor\Amp\Serialization\Serializer;
-use Test\Vendor\Amp\Sync\Lock;
-use Test\Vendor\Amp\Sync\PosixSemaphore;
-use Test\Vendor\Amp\Sync\SyncException;
-use function Test\Vendor\Amp\call;
+use Amp\Promise;
+use Amp\Serialization\NativeSerializer;
+use Amp\Serialization\Serializer;
+use Amp\Sync\Lock;
+use Amp\Sync\PosixSemaphore;
+use Amp\Sync\SyncException;
+use function Amp\call;
 
 /**
  * A container object for sharing a value across contexts.

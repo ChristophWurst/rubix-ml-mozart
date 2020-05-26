@@ -44,7 +44,7 @@ namespace Amp
     /**
      * Returns a new function that wraps $callback in a promise/coroutine-aware function that automatically runs
      * Generators as coroutines. The returned function always returns void when invoked. Errors are forwarded to the
-     * loop's error handler using `Test\Vendor\Amp\Promise\rethrow()`.
+     * loop's error handler using `Amp\Promise\rethrow()`.
      *
      * Use this function to create a coroutine-aware callable for a non-promise-aware callback caller.
      *
@@ -144,18 +144,18 @@ namespace Amp
     }
 }
 
-namespace Test\Vendor\Amp\Promise
+namespace Amp\Promise
 {
 
-    use Test\Vendor\Amp\Deferred;
-    use Test\Vendor\Amp\Loop;
-    use Test\Vendor\Amp\MultiReasonException;
-    use Test\Vendor\Amp\Promise;
-    use Test\Vendor\Amp\Success;
-    use Test\Vendor\Amp\TimeoutException;
+    use Amp\Deferred;
+    use Amp\Loop;
+    use Amp\MultiReasonException;
+    use Amp\Promise;
+    use Amp\Success;
+    use Amp\TimeoutException;
     use React\Promise\PromiseInterface as ReactPromise;
-    use function Test\Vendor\Amp\call;
-    use function Test\Vendor\Amp\Internal\createTypeError;
+    use function Amp\call;
+    use function Amp\Internal\createTypeError;
 
     /**
      * Registers a callback that will forward the failure reason to the event loop's error handler if the promise fails.
@@ -166,7 +166,7 @@ namespace Test\Vendor\Amp\Promise
      * @param Promise|ReactPromise $promise Promise to register the handler on.
      *
      * @return void
-     * @throws \TypeError If $promise is not an instance of \Test\Vendor\Amp\Promise or \React\Promise\PromiseInterface.
+     * @throws \TypeError If $promise is not an instance of \Amp\Promise or \React\Promise\PromiseInterface.
      *
      */
     function rethrow($promise)
@@ -202,7 +202,7 @@ namespace Test\Vendor\Amp\Promise
      * @psalm-param T $promise
      * @psalm-return (T is Promise ? TPromise : mixed)
      *
-     * @throws \TypeError If $promise is not an instance of \Test\Vendor\Amp\Promise or \React\Promise\PromiseInterface.
+     * @throws \TypeError If $promise is not an instance of \Amp\Promise or \React\Promise\PromiseInterface.
      * @throws \Error If the event loop stopped without the $promise being resolved.
      * @throws \Throwable Promise failure reason.
      */
@@ -246,7 +246,7 @@ namespace Test\Vendor\Amp\Promise
      * Creates an artificial timeout for any `Promise`.
      *
      * If the timeout expires before the promise is resolved, the returned promise fails with an instance of
-     * `Test\Vendor\Amp\TimeoutException`.
+     * `Amp\TimeoutException`.
      *
      * @template TReturn
      *
@@ -255,7 +255,7 @@ namespace Test\Vendor\Amp\Promise
      *
      * @return Promise<TReturn>
      *
-     * @throws \TypeError If $promise is not an instance of \Test\Vendor\Amp\Promise or \React\Promise\PromiseInterface.
+     * @throws \TypeError If $promise is not an instance of \Amp\Promise or \React\Promise\PromiseInterface.
      */
     function timeout($promise, int $timeout): Promise
     {
@@ -301,7 +301,7 @@ namespace Test\Vendor\Amp\Promise
      *
      * @return Promise<TReturn>
      *
-     * @throws \TypeError If $promise is not an instance of \Test\Vendor\Amp\Promise or \React\Promise\PromiseInterface.
+     * @throws \TypeError If $promise is not an instance of \Amp\Promise or \React\Promise\PromiseInterface.
      */
     function timeoutWithDefault($promise, int $timeout, $default = null): Promise
     {
@@ -576,17 +576,17 @@ namespace Test\Vendor\Amp\Promise
     }
 }
 
-namespace Test\Vendor\Amp\Iterator
+namespace Amp\Iterator
 {
 
-    use Test\Vendor\Amp\Delayed;
-    use Test\Vendor\Amp\Emitter;
-    use Test\Vendor\Amp\Iterator;
-    use Test\Vendor\Amp\Producer;
-    use Test\Vendor\Amp\Promise;
-    use function Test\Vendor\Amp\call;
-    use function Test\Vendor\Amp\coroutine;
-    use function Test\Vendor\Amp\Internal\createTypeError;
+    use Amp\Delayed;
+    use Amp\Emitter;
+    use Amp\Iterator;
+    use Amp\Producer;
+    use Amp\Promise;
+    use function Amp\call;
+    use function Amp\coroutine;
+    use function Amp\Internal\createTypeError;
 
     /**
      * Creates an iterator from the given iterable, emitting the each value. The iterable may contain promises. If any

@@ -1,10 +1,10 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
-use Test\Vendor\Amp\Coroutine;
-use Test\Vendor\Amp\Delayed;
-use Test\Vendor\Amp\Promise;
+use Amp\Coroutine;
+use Amp\Delayed;
+use Amp\Promise;
 
 /**
  * A cross-platform mutex that uses exclusive files as the lock mechanism.

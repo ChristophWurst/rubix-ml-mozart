@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
 /**
  * Interface for factories used to create new workers.

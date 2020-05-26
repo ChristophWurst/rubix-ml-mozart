@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync;
+namespace Amp\Parallel\Sync;
 
 /**
  * @deprecated ContextPanicError will be thrown from uncaught exceptions in child processes and threads instead of

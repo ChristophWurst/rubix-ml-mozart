@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Psr\Log;
+namespace Psr\Log;
 
 /**
  * Describes a logger instance.
@@ -119,7 +119,7 @@ interface LoggerInterface
      *
      * @return void
      *
-     * @throws \Test\Vendor\Psr\Log\InvalidArgumentException
+     * @throws \Psr\Log\InvalidArgumentException
      */
     public function log($level, $message, array $context = array());
 }

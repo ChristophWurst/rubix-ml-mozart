@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /**
  * A thread-safe, asynchronous mutex using the pthreads locking mechanism.

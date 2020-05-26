@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync\Internal;
+namespace Amp\Parallel\Sync\Internal;
 
 final class ParcelStorage extends \Threaded
 {

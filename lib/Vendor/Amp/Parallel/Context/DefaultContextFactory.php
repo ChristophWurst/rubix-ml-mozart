@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context;
+namespace Amp\Parallel\Context;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 class DefaultContextFactory implements ContextFactory
 {

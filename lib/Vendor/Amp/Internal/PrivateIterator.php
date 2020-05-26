@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Internal;
+namespace Amp\Internal;
 
-use Test\Vendor\Amp\Iterator;
-use Test\Vendor\Amp\Promise;
+use Amp\Iterator;
+use Amp\Promise;
 
 /**
  * Wraps an Iterator instance that has public methods to emit, complete, and fail into an object that only allows

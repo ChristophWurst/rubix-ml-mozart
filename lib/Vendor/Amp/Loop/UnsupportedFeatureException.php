@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Loop;
+namespace Amp\Loop;
 
 /**
  * MUST be thrown if a feature is not supported by the system.

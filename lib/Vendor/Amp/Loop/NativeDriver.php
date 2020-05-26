@@ -1,13 +1,13 @@
 <?php
 
-namespace Test\Vendor\Amp\Loop;
+namespace Amp\Loop;
 
-use Test\Vendor\Amp\CallableMaker;
-use Test\Vendor\Amp\Coroutine;
-use Test\Vendor\Amp\Promise;
+use Amp\CallableMaker;
+use Amp\Coroutine;
+use Amp\Promise;
 use React\Promise\PromiseInterface as ReactPromise;
-use function Test\Vendor\Amp\Internal\getCurrentTime;
-use function Test\Vendor\Amp\Promise\rethrow;
+use function Amp\Internal\getCurrentTime;
+use function Amp\Promise\rethrow;
 
 class NativeDriver extends Driver
 {
@@ -55,7 +55,7 @@ class NativeDriver extends Driver
     /**
      * {@inheritdoc}
      *
-     * @throws \Test\Vendor\Amp\Loop\UnsupportedFeatureException If the pcntl extension is not available.
+     * @throws \Amp\Loop\UnsupportedFeatureException If the pcntl extension is not available.
      */
     public function onSignal(int $signo, callable $callback, $data = null): string
     {

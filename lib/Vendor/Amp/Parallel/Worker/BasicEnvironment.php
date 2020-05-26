@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Struct;
+use Amp\Loop;
+use Amp\Struct;
 
 final class BasicEnvironment implements Environment
 {

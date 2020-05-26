@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker\Internal;
+namespace Amp\Parallel\Worker\Internal;
 
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Parallel\Worker\Task;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
+use Amp\Failure;
+use Amp\Parallel\Worker\Task;
+use Amp\Promise;
+use Amp\Success;
 
 /** @internal */
 final class TaskSuccess extends TaskResult

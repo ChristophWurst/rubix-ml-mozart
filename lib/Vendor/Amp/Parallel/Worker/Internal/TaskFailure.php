@@ -1,13 +1,13 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker\Internal;
+namespace Amp\Parallel\Worker\Internal;
 
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Parallel\Sync;
-use Test\Vendor\Amp\Parallel\Worker\TaskFailureError;
-use Test\Vendor\Amp\Parallel\Worker\TaskFailureException;
-use Test\Vendor\Amp\Parallel\Worker\TaskFailureThrowable;
-use Test\Vendor\Amp\Promise;
+use Amp\Failure;
+use Amp\Parallel\Sync;
+use Amp\Parallel\Worker\TaskFailureError;
+use Amp\Parallel\Worker\TaskFailureException;
+use Amp\Parallel\Worker\TaskFailureThrowable;
+use Amp\Promise;
 
 /** @internal */
 final class TaskFailure extends TaskResult

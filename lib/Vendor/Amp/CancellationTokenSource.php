@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 use React\Promise\PromiseInterface as ReactPromise;
-use function Test\Vendor\Amp\Promise\rethrow;
+use function Amp\Promise\rethrow;
 
 /**
  * A cancellation token source provides a mechanism to cancel operations.

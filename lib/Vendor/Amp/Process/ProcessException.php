@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Process;
+namespace Amp\Process;
 
 class ProcessException extends \Exception
 {

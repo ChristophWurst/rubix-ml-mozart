@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Process\Internal;
+namespace Amp\Process\Internal;
 
 final class ProcessStatus
 {

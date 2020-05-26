@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync;
+namespace Amp\Parallel\Sync;
 
-use Test\Vendor\Amp\Parser\Parser;
-use Test\Vendor\Amp\Serialization\NativeSerializer;
-use Test\Vendor\Amp\Serialization\Serializer;
-use function Test\Vendor\Amp\Serialization\encodeUnprintableChars;
+use Amp\Parser\Parser;
+use Amp\Serialization\NativeSerializer;
+use Amp\Serialization\Serializer;
+use function Amp\Serialization\encodeUnprintableChars;
 
 final class ChannelParser extends Parser
 {

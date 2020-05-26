@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
-use function Test\Vendor\Amp\Internal\formatStacktrace;
+use function Amp\Internal\formatStacktrace;
 
 /**
  * A TimeoutCancellationToken automatically requests cancellation after the timeout has elapsed.

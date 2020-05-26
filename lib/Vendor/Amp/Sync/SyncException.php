@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
 class SyncException extends \Exception
 {

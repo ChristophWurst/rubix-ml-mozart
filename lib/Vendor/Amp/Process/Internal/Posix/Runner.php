@@ -1,18 +1,18 @@
 <?php
 
-namespace Test\Vendor\Amp\Process\Internal\Posix;
+namespace Amp\Process\Internal\Posix;
 
-use Test\Vendor\Amp\ByteStream\ResourceInputStream;
-use Test\Vendor\Amp\ByteStream\ResourceOutputStream;
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Process\Internal\ProcessHandle;
-use Test\Vendor\Amp\Process\Internal\ProcessRunner;
-use Test\Vendor\Amp\Process\Internal\ProcessStatus;
-use Test\Vendor\Amp\Process\ProcessException;
-use Test\Vendor\Amp\Process\ProcessInputStream;
-use Test\Vendor\Amp\Process\ProcessOutputStream;
-use Test\Vendor\Amp\Promise;
+use Amp\ByteStream\ResourceInputStream;
+use Amp\ByteStream\ResourceOutputStream;
+use Amp\Deferred;
+use Amp\Loop;
+use Amp\Process\Internal\ProcessHandle;
+use Amp\Process\Internal\ProcessRunner;
+use Amp\Process\Internal\ProcessStatus;
+use Amp\Process\ProcessException;
+use Amp\Process\ProcessInputStream;
+use Amp\Process\ProcessOutputStream;
+use Amp\Promise;
 
 /** @internal */
 final class Runner implements ProcessRunner

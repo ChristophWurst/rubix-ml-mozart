@@ -1,10 +1,10 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker\Internal;
+namespace Amp\Parallel\Worker\Internal;
 
-use Test\Vendor\Amp\Parallel\Sync;
-use Test\Vendor\Amp\Parallel\Worker;
-use Test\Vendor\Amp\Promise;
+use Amp\Parallel\Sync;
+use Amp\Parallel\Worker;
+use Amp\Promise;
 
 return function (Sync\Channel $channel) use ($argc, $argv): Promise {
     if (!\defined("AMP_WORKER")) {

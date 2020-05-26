@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 /**
  * Defines an asynchronous iterator over a set of values that is designed to be used within a coroutine.

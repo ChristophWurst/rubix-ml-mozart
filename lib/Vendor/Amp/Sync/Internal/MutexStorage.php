@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync\Internal;
+namespace Amp\Sync\Internal;
 
-use Test\Vendor\Amp\Delayed;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Sync\Lock;
-use function Test\Vendor\Amp\call;
+use Amp\Delayed;
+use Amp\Promise;
+use Amp\Sync\Lock;
+use function Amp\call;
 
 /** @internal */
 final class MutexStorage extends \Threaded

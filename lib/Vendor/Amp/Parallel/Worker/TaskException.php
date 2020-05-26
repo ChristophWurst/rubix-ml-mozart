@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
 /**
  * @deprecated TaskFailureException will be thrown from failed Tasks instead of this class.

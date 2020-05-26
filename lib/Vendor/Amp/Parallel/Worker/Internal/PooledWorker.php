@@ -1,10 +1,10 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker\Internal;
+namespace Amp\Parallel\Worker\Internal;
 
-use Test\Vendor\Amp\Parallel\Worker\Task;
-use Test\Vendor\Amp\Parallel\Worker\Worker;
-use Test\Vendor\Amp\Promise;
+use Amp\Parallel\Worker\Task;
+use Amp\Parallel\Worker\Worker;
+use Amp\Promise;
 
 /** @internal */
 final class PooledWorker implements Worker

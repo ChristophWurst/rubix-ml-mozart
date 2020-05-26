@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Process\Internal\Windows;
+namespace Amp\Process\Internal\Windows;
 
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Process\Internal\ProcessHandle;
+use Amp\Deferred;
+use Amp\Process\Internal\ProcessHandle;
 
 /**
  * @internal

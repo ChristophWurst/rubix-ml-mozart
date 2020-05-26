@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Parser;
+namespace Amp\Parser;
 
 class InvalidDelimiterError extends \Error {
     /**

@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\call;
+use Amp\Promise;
+use function Amp\call;
 
 final class LineReader
 {

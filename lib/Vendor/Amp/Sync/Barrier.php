@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Promise;
+use Amp\Deferred;
+use Amp\Promise;
 
 /**
  * A barrier is a synchronization primitive.
@@ -17,7 +17,7 @@ use Test\Vendor\Amp\Promise;
  * **Example**
  *
  * ```php
- * $barrier = new Test\Vendor\Amp\Sync\Barrier(2);
+ * $barrier = new Amp\Sync\Barrier(2);
  * $barrier->arrive();
  * $barrier->arrive(); // promise returned from Barrier::await() is now resolved
  *

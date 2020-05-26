@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
+use Amp\Promise;
+use Amp\Success;
 
 /**
  * Input stream with a single already known data chunk.

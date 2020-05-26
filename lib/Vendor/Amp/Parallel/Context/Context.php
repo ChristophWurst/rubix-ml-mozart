@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context;
+namespace Amp\Parallel\Context;
 
-use Test\Vendor\Amp\Parallel\Sync\Channel;
-use Test\Vendor\Amp\Promise;
+use Amp\Parallel\Sync\Channel;
+use Amp\Promise;
 
 interface Context extends Channel
 {
@@ -25,10 +25,10 @@ interface Context extends Channel
     public function kill();
 
     /**
-     * @return \Test\Vendor\Amp\Promise<mixed> Resolves with the returned from the context.
+     * @return \Amp\Promise<mixed> Resolves with the returned from the context.
      *
-     * @throws \Test\Vendor\Amp\Parallel\Context\ContextException If the context dies unexpectedly.
-     * @throws \Test\Vendor\Amp\Parallel\Sync\PanicError If the context throws an uncaught exception.
+     * @throws \Amp\Parallel\Context\ContextException If the context dies unexpectedly.
+     * @throws \Amp\Parallel\Sync\PanicError If the context throws an uncaught exception.
      */
     public function join(): Promise;
 }

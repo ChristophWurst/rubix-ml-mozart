@@ -1,13 +1,13 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync;
+namespace Amp\Parallel\Sync;
 
-use Test\Vendor\Amp\ByteStream\InputStream;
-use Test\Vendor\Amp\ByteStream\OutputStream;
-use Test\Vendor\Amp\ByteStream\StreamException;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Serialization\Serializer;
-use function Test\Vendor\Amp\call;
+use Amp\ByteStream\InputStream;
+use Amp\ByteStream\OutputStream;
+use Amp\ByteStream\StreamException;
+use Amp\Promise;
+use Amp\Serialization\Serializer;
+use function Amp\call;
 
 /**
  * An asynchronous channel for sending data between threads and processes.

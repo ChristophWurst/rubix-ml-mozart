@@ -1,12 +1,12 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Iterator;
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Producer;
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\call;
+use Amp\Iterator;
+use Amp\Loop;
+use Amp\Producer;
+use Amp\Promise;
+use function Amp\call;
 
 // @codeCoverageIgnoreStart
 if (\strlen('…') !== 3) {
@@ -24,10 +24,10 @@ if (!\defined('STDERR')) {
 }
 
 /**
- * @param \Test\Vendor\Amp\ByteStream\InputStream  $source
- * @param \Test\Vendor\Amp\ByteStream\OutputStream $destination
+ * @param \Amp\ByteStream\InputStream  $source
+ * @param \Amp\ByteStream\OutputStream $destination
  *
- * @return \Test\Vendor\Amp\Promise
+ * @return \Amp\Promise
  */
 function pipe(InputStream $source, OutputStream $destination): Promise
 {
@@ -46,9 +46,9 @@ function pipe(InputStream $source, OutputStream $destination): Promise
 }
 
 /**
- * @param \Test\Vendor\Amp\ByteStream\InputStream $source
+ * @param \Amp\ByteStream\InputStream $source
  *
- * @return \Test\Vendor\Amp\Promise
+ * @return \Amp\Promise
  */
 function buffer(InputStream $source): Promise
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker\Internal;
+namespace Amp\Parallel\Worker\Internal;
 
-use Test\Vendor\Amp\ByteStream;
-use Test\Vendor\Amp\Parallel\Context\Context;
-use Test\Vendor\Amp\Parallel\Context\Process;
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\call;
+use Amp\ByteStream;
+use Amp\Parallel\Context\Context;
+use Amp\Parallel\Context\Process;
+use Amp\Promise;
+use function Amp\call;
 
 class WorkerProcess implements Context
 {

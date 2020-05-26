@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 /**
  * Creates a promise that resolves itself with a given value after a number of milliseconds.

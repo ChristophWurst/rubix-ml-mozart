@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context\Internal;
+namespace Amp\Parallel\Context\Internal;
 
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Parallel\Sync\ChannelledSocket;
+use Amp\Loop;
+use Amp\Parallel\Sync\ChannelledSocket;
 use parallel\Events;
 use parallel\Future;
 

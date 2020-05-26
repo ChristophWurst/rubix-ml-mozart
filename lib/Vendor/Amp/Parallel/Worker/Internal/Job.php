@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker\Internal;
+namespace Amp\Parallel\Worker\Internal;
 
-use Test\Vendor\Amp\Parallel\Worker\Task;
+use Amp\Parallel\Worker\Task;
 
 /** @internal */
 final class Job

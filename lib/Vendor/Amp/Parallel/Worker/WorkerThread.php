@@ -1,10 +1,10 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
-use Test\Vendor\Amp\Parallel\Context\Thread;
-use Test\Vendor\Amp\Parallel\Sync\Channel;
-use Test\Vendor\Amp\Promise;
+use Amp\Parallel\Context\Thread;
+use Amp\Parallel\Sync\Channel;
+use Amp\Promise;
 
 /**
  * A worker thread that executes task objects.
@@ -14,8 +14,8 @@ use Test\Vendor\Amp\Promise;
 final class WorkerThread extends TaskWorker
 {
     /**
-     * @param string $envClassName Name of class implementing \Test\Vendor\Amp\Parallel\Worker\Environment to instigate.
-     *     Defaults to \Test\Vendor\Amp\Parallel\Worker\BasicEnvironment.
+     * @param string $envClassName Name of class implementing \Amp\Parallel\Worker\Environment to instigate.
+     *     Defaults to \Amp\Parallel\Worker\BasicEnvironment.
      * @param string|null $bootstrapPath Path to custom autoloader.
      */
     public function __construct(string $envClassName = BasicEnvironment::class, string $bootstrapPath = null)

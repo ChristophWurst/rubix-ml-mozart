@@ -1,15 +1,15 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context\Internal;
+namespace Amp\Parallel\Context\Internal;
 
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Parallel\Sync\Channel;
-use Test\Vendor\Amp\Parallel\Sync\ChannelException;
-use Test\Vendor\Amp\Parallel\Sync\ChannelledSocket;
-use Test\Vendor\Amp\Parallel\Sync\ExitFailure;
-use Test\Vendor\Amp\Parallel\Sync\ExitSuccess;
-use Test\Vendor\Amp\Parallel\Sync\SerializationException;
-use function Test\Vendor\Amp\call;
+use Amp\Loop;
+use Amp\Parallel\Sync\Channel;
+use Amp\Parallel\Sync\ChannelException;
+use Amp\Parallel\Sync\ChannelledSocket;
+use Amp\Parallel\Sync\ExitFailure;
+use Amp\Parallel\Sync\ExitSuccess;
+use Amp\Parallel\Sync\SerializationException;
+use function Amp\call;
 
 /**
  * An internal thread that executes a given function concurrently.
@@ -122,7 +122,7 @@ final class Thread extends \Thread
     }
 
     /**
-     * @param \Test\Vendor\Amp\Parallel\Sync\Channel $channel
+     * @param \Amp\Parallel\Sync\Channel $channel
      *
      * @return \Generator
      *

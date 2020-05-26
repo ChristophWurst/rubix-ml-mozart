@@ -1,15 +1,15 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context\Internal;
+namespace Amp\Parallel\Context\Internal;
 
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Parallel\Context\ContextException;
-use Test\Vendor\Amp\Parallel\Sync\ChannelledSocket;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\TimeoutException;
-use function Test\Vendor\Amp\asyncCall;
-use function Test\Vendor\Amp\call;
+use Amp\Deferred;
+use Amp\Loop;
+use Amp\Parallel\Context\ContextException;
+use Amp\Parallel\Sync\ChannelledSocket;
+use Amp\Promise;
+use Amp\TimeoutException;
+use function Amp\asyncCall;
+use function Amp\call;
 
 class ProcessHub
 {

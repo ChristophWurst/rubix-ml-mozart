@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\call;
+use Amp\Promise;
+use function Amp\call;
 
 class SemaphoreMutex implements Mutex
 {
@@ -22,7 +22,7 @@ class SemaphoreMutex implements Mutex
     public function acquire(): Promise
     {
         return call(function (): \Generator {
-            /** @var \Test\Vendor\Amp\Sync\Lock $lock */
+            /** @var \Amp\Sync\Lock $lock */
             $lock = yield $this->semaphore->acquire();
             if ($lock->getId() !== 0) {
                 $lock->release();

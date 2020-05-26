@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 use React\Promise\PromiseInterface as ReactPromise;
 
@@ -20,7 +20,7 @@ final class Coroutine implements Promise
 
     /**
      * Attempts to transform the non-promise yielded from the generator into a promise, otherwise returns an instance
-     * `Test\Vendor\Amp\Failure` failed with an instance of `Test\Vendor\Amp\InvalidYieldError`.
+     * `Amp\Failure` failed with an instance of `Amp\InvalidYieldError`.
      *
      * @param mixed      $yielded Non-promise yielded from generator.
      * @param \Generator $generator No type for performance, we already know the type.

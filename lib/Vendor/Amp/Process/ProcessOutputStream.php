@@ -1,14 +1,14 @@
 <?php
 
-namespace Test\Vendor\Amp\Process;
+namespace Amp\Process;
 
-use Test\Vendor\Amp\ByteStream\ClosedException;
-use Test\Vendor\Amp\ByteStream\OutputStream;
-use Test\Vendor\Amp\ByteStream\ResourceOutputStream;
-use Test\Vendor\Amp\ByteStream\StreamException;
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Promise;
+use Amp\ByteStream\ClosedException;
+use Amp\ByteStream\OutputStream;
+use Amp\ByteStream\ResourceOutputStream;
+use Amp\ByteStream\StreamException;
+use Amp\Deferred;
+use Amp\Failure;
+use Amp\Promise;
 
 final class ProcessOutputStream implements OutputStream
 {
@@ -42,7 +42,7 @@ final class ProcessOutputStream implements OutputStream
             while (!$this->queuedWrites->isEmpty()) {
                 /**
                  * @var string $data
-                 * @var \Test\Vendor\Amp\Deferred $deferred
+                 * @var \Amp\Deferred $deferred
                  */
                 list($data, $deferred) = $this->queuedWrites->shift();
                 $deferred->resolve($resourceStream->write($data));

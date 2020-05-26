@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker\Internal;
+namespace Amp\Parallel\Worker\Internal;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /** @internal */
 abstract class TaskResult

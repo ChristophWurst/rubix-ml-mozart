@@ -1,18 +1,18 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context;
+namespace Amp\Parallel\Context;
 
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Parallel\Sync\ChannelException;
-use Test\Vendor\Amp\Parallel\Sync\ChannelledSocket;
-use Test\Vendor\Amp\Parallel\Sync\ExitResult;
-use Test\Vendor\Amp\Parallel\Sync\SynchronizationError;
-use Test\Vendor\Amp\Process\Process as BaseProcess;
-use Test\Vendor\Amp\Process\ProcessInputStream;
-use Test\Vendor\Amp\Process\ProcessOutputStream;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\TimeoutException;
-use function Test\Vendor\Amp\call;
+use Amp\Loop;
+use Amp\Parallel\Sync\ChannelException;
+use Amp\Parallel\Sync\ChannelledSocket;
+use Amp\Parallel\Sync\ExitResult;
+use Amp\Parallel\Sync\SynchronizationError;
+use Amp\Process\Process as BaseProcess;
+use Amp\Process\ProcessInputStream;
+use Amp\Process\ProcessOutputStream;
+use Amp\Promise;
+use Amp\TimeoutException;
+use function Amp\call;
 
 final class Process implements Context
 {
@@ -319,12 +319,12 @@ final class Process implements Context
     /**
      * Send a signal to the process.
      *
-     * @see \Test\Vendor\Amp\Process\Process::signal()
+     * @see \Amp\Process\Process::signal()
      *
      * @param int $signo
      *
-     * @throws \Test\Vendor\Amp\Process\ProcessException
-     * @throws \Test\Vendor\Amp\Process\StatusError
+     * @throws \Amp\Process\ProcessException
+     * @throws \Amp\Process\StatusError
      */
     public function signal(int $signo): void
     {
@@ -334,11 +334,11 @@ final class Process implements Context
     /**
      * Returns the PID of the process.
      *
-     * @see \Test\Vendor\Amp\Process\Process::getPid()
+     * @see \Amp\Process\Process::getPid()
      *
      * @return int
      *
-     * @throws \Test\Vendor\Amp\Process\StatusError
+     * @throws \Amp\Process\StatusError
      */
     public function getPid(): int
     {
@@ -348,11 +348,11 @@ final class Process implements Context
     /**
      * Returns the STDIN stream of the process.
      *
-     * @see \Test\Vendor\Amp\Process\Process::getStdin()
+     * @see \Amp\Process\Process::getStdin()
      *
      * @return ProcessOutputStream
      *
-     * @throws \Test\Vendor\Amp\Process\StatusError
+     * @throws \Amp\Process\StatusError
      */
     public function getStdin(): ProcessOutputStream
     {
@@ -362,11 +362,11 @@ final class Process implements Context
     /**
      * Returns the STDOUT stream of the process.
      *
-     * @see \Test\Vendor\Amp\Process\Process::getStdout()
+     * @see \Amp\Process\Process::getStdout()
      *
      * @return ProcessInputStream
      *
-     * @throws \Test\Vendor\Amp\Process\StatusError
+     * @throws \Amp\Process\StatusError
      */
     public function getStdout(): ProcessInputStream
     {
@@ -376,11 +376,11 @@ final class Process implements Context
     /**
      * Returns the STDOUT stream of the process.
      *
-     * @see \Test\Vendor\Amp\Process\Process::getStderr()
+     * @see \Amp\Process\Process::getStderr()
      *
      * @return ProcessInputStream
      *
-     * @throws \Test\Vendor\Amp\Process\StatusError
+     * @throws \Amp\Process\StatusError
      */
     public function getStderr(): ProcessInputStream
     {

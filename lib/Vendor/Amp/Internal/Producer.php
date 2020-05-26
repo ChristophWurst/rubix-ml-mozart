@@ -1,16 +1,16 @@
 <?php
 
-namespace Test\Vendor\Amp\Internal;
+namespace Amp\Internal;
 
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
+use Amp\Deferred;
+use Amp\Failure;
+use Amp\Promise;
+use Amp\Success;
 use React\Promise\PromiseInterface as ReactPromise;
 
 /**
  * Trait used by Iterator implementations. Do not use this trait in your code, instead compose your class from one of
- * the available classes implementing \Test\Vendor\Amp\Iterator.
+ * the available classes implementing \Amp\Iterator.
  * Note that it is the responsibility of the user of this trait to ensure that listeners have a chance to listen first
  * before emitting values.
  *

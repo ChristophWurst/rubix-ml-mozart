@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 final class CombinedCancellationToken implements CancellationToken
 {

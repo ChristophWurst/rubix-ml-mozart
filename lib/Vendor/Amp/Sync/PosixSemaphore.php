@@ -1,10 +1,10 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
-use Test\Vendor\Amp\Coroutine;
-use Test\Vendor\Amp\Delayed;
-use Test\Vendor\Amp\Promise;
+use Amp\Coroutine;
+use Amp\Delayed;
+use Amp\Promise;
 
 /**
  * A non-blocking, inter-process POSIX semaphore.
@@ -54,7 +54,7 @@ class PosixSemaphore implements Semaphore
     /**
      * @param string $id The unique name of the semaphore to use.
      *
-     * @return \Test\Vendor\Amp\Sync\PosixSemaphore
+     * @return \Amp\Sync\PosixSemaphore
      */
     public static function use(string $id): self
     {

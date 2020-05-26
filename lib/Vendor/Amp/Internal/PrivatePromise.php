@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Internal;
+namespace Amp\Internal;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /**
  * Wraps a Promise instance that has public methods to resolve and fail the promise into an object that only allows

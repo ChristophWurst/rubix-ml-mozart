@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync;
+namespace Amp\Parallel\Sync;
 
-use Test\Vendor\Amp\Serialization\SerializationException as SerializerException;
+use Amp\Serialization\SerializationException as SerializerException;
 
 // Alias must be defined in an always-loaded file as catch blocks do not trigger the autoloader.
 \class_alias(SerializerException::class, SerializationException::class);

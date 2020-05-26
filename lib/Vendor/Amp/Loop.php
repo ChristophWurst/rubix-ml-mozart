@@ -1,17 +1,17 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
-use Test\Vendor\Amp\Loop\Driver;
-use Test\Vendor\Amp\Loop\DriverFactory;
-use Test\Vendor\Amp\Loop\InvalidWatcherError;
-use Test\Vendor\Amp\Loop\UnsupportedFeatureException;
-use Test\Vendor\Amp\Loop\Watcher;
+use Amp\Loop\Driver;
+use Amp\Loop\DriverFactory;
+use Amp\Loop\InvalidWatcherError;
+use Amp\Loop\UnsupportedFeatureException;
+use Amp\Loop\Watcher;
 
 /**
  * Accessor to allow global access to the event loop.
  *
- * @see \Test\Vendor\Amp\Loop\Driver
+ * @see \Amp\Loop\Driver
  */
 final class Loop
 {

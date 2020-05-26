@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync;
+namespace Amp\Parallel\Sync;
 
-use Test\Vendor\Amp\ByteStream\ResourceInputStream;
-use Test\Vendor\Amp\ByteStream\ResourceOutputStream;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Serialization\Serializer;
+use Amp\ByteStream\ResourceInputStream;
+use Amp\ByteStream\ResourceOutputStream;
+use Amp\Promise;
+use Amp\Serialization\Serializer;
 
 final class ChannelledSocket implements Channel
 {

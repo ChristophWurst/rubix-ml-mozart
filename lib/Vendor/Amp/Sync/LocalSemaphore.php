@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
-use Test\Vendor\Amp\CallableMaker;
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
+use Amp\CallableMaker;
+use Amp\Deferred;
+use Amp\Promise;
+use Amp\Success;
 
 class LocalSemaphore implements Semaphore
 {

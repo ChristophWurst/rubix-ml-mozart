@@ -1,12 +1,12 @@
 <?php
 
-namespace Test\Vendor\Amp\Process\Internal\Windows;
+namespace Amp\Process\Internal\Windows;
 
-use Test\Vendor\Amp\ByteStream\ResourceInputStream;
-use Test\Vendor\Amp\ByteStream\ResourceOutputStream;
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Process\Internal\ProcessStatus;
-use Test\Vendor\Amp\Process\ProcessException;
+use Amp\ByteStream\ResourceInputStream;
+use Amp\ByteStream\ResourceOutputStream;
+use Amp\Loop;
+use Amp\Process\Internal\ProcessStatus;
+use Amp\Process\ProcessException;
 
 /**
  * @internal

@@ -1,11 +1,11 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync;
+namespace Amp\Parallel\Sync;
 
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
-use Test\Vendor\Amp\Sync\ThreadedMutex;
-use function Test\Vendor\Amp\call;
+use Amp\Promise;
+use Amp\Success;
+use Amp\Sync\ThreadedMutex;
+use function Amp\call;
 
 /**
  * A thread-safe container that shares a value between multiple threads.
@@ -40,12 +40,12 @@ final class ThreadedParcel implements Parcel
     }
 
     /**
-     * @return \Test\Vendor\Amp\Promise
+     * @return \Amp\Promise
      */
     public function synchronized(callable $callback): Promise
     {
         return call(function () use ($callback): \Generator {
-            /** @var \Test\Vendor\Amp\Sync\Lock $lock */
+            /** @var \Amp\Sync\Lock $lock */
             $lock = yield $this->mutex->acquire();
 
             try {

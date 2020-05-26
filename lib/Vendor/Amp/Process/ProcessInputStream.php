@@ -1,15 +1,15 @@
 <?php
 
-namespace Test\Vendor\Amp\Process;
+namespace Amp\Process;
 
-use Test\Vendor\Amp\ByteStream\InputStream;
-use Test\Vendor\Amp\ByteStream\PendingReadError;
-use Test\Vendor\Amp\ByteStream\ResourceInputStream;
-use Test\Vendor\Amp\ByteStream\StreamException;
-use Test\Vendor\Amp\Deferred;
-use Test\Vendor\Amp\Failure;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
+use Amp\ByteStream\InputStream;
+use Amp\ByteStream\PendingReadError;
+use Amp\ByteStream\ResourceInputStream;
+use Amp\ByteStream\StreamException;
+use Amp\Deferred;
+use Amp\Failure;
+use Amp\Promise;
+use Amp\Success;
 
 final class ProcessInputStream implements InputStream
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Loop;
+namespace Amp\Loop;
 
-use Test\Vendor\Amp\Struct;
+use Amp\Struct;
 
 /**
  * @template TValue as (int|resource|null)

@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Loop;
+namespace Amp\Loop;
 
-use function Test\Vendor\Amp\Internal\formatStacktrace;
+use function Amp\Internal\formatStacktrace;
 
 final class TracingDriver extends Driver
 {

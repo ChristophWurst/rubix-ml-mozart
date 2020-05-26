@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /**
  * An `OutputStream` allows writing data in chunks. Writers can wait on the returned promises to feel the backpressure.

@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Serialization;
+namespace Amp\Serialization;
 
 final class PassthroughSerializer implements Serializer
 {

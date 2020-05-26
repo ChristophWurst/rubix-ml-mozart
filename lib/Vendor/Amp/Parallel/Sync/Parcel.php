@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Sync;
+namespace Amp\Parallel\Sync;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /**
  * A parcel object for sharing data across execution contexts.
@@ -26,13 +26,13 @@ interface Parcel
      * @param callable $callback The synchronized callback to invoke. The parcel value is given as the single argument
      *     to the callback function. The callback may be a regular function or a coroutine.
      *
-     * @return \Test\Vendor\Amp\Promise<mixed> Resolves with the return value of $callback or fails if $callback
+     * @return \Amp\Promise<mixed> Resolves with the return value of $callback or fails if $callback
      *     throws an exception.
      */
     public function synchronized(callable $callback): Promise;
 
     /**
-     * @return \Test\Vendor\Amp\Promise<mixed> A promise for the value inside the parcel.
+     * @return \Amp\Promise<mixed> A promise for the value inside the parcel.
      */
     public function unwrap(): Promise;
 }

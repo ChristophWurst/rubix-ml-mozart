@@ -1,9 +1,9 @@
 <?php
 
-namespace Test\Vendor\Amp\Loop\Internal;
+namespace Amp\Loop\Internal;
 
-use Test\Vendor\Amp\Loop\Watcher;
-use Test\Vendor\Amp\Struct;
+use Amp\Loop\Watcher;
+use Amp\Struct;
 
 /**
  * @internal

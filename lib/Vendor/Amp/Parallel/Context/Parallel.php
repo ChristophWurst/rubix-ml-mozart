@@ -1,19 +1,19 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Context;
+namespace Amp\Parallel\Context;
 
-use Test\Vendor\Amp\Loop;
-use Test\Vendor\Amp\Parallel\Sync\ChannelException;
-use Test\Vendor\Amp\Parallel\Sync\ChannelledSocket;
-use Test\Vendor\Amp\Parallel\Sync\ExitFailure;
-use Test\Vendor\Amp\Parallel\Sync\ExitResult;
-use Test\Vendor\Amp\Parallel\Sync\ExitSuccess;
-use Test\Vendor\Amp\Parallel\Sync\SerializationException;
-use Test\Vendor\Amp\Parallel\Sync\SynchronizationError;
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\TimeoutException;
+use Amp\Loop;
+use Amp\Parallel\Sync\ChannelException;
+use Amp\Parallel\Sync\ChannelledSocket;
+use Amp\Parallel\Sync\ExitFailure;
+use Amp\Parallel\Sync\ExitResult;
+use Amp\Parallel\Sync\ExitSuccess;
+use Amp\Parallel\Sync\SerializationException;
+use Amp\Parallel\Sync\SynchronizationError;
+use Amp\Promise;
+use Amp\TimeoutException;
 use parallel\Runtime;
-use function Test\Vendor\Amp\call;
+use function Amp\call;
 
 /**
  * Implements an execution context using native threads provided by the parallel extension.
@@ -140,7 +140,7 @@ final class Parallel implements Context
     /**
      * Kills the thread if it is still running.
      *
-     * @throws \Test\Vendor\Amp\Parallel\Context\ContextException
+     * @throws \Amp\Parallel\Context\ContextException
      */
     public function __destruct()
     {
@@ -164,8 +164,8 @@ final class Parallel implements Context
      *
      * @return Promise<int> Resolved once the thread has started.
      *
-     * @throws \Test\Vendor\Amp\Parallel\Context\StatusError If the thread has already been started.
-     * @throws \Test\Vendor\Amp\Parallel\Context\ContextException If starting the thread was unsuccessful.
+     * @throws \Amp\Parallel\Context\StatusError If the thread has already been started.
+     * @throws \Amp\Parallel\Context\ContextException If starting the thread was unsuccessful.
      */
     public function start(): Promise
     {
@@ -306,7 +306,7 @@ final class Parallel implements Context
      * Gets a promise that resolves when the context ends and joins with the
      * parent context.
      *
-     * @return \Test\Vendor\Amp\Promise<mixed>
+     * @return \Amp\Promise<mixed>
      *
      * @throws StatusError Thrown if the context has not been started.
      * @throws SynchronizationError Thrown if an exit status object is not received.
@@ -405,7 +405,7 @@ final class Parallel implements Context
      *
      * @return int
      *
-     * @throws \Test\Vendor\Amp\Process\StatusError
+     * @throws \Amp\Process\StatusError
      */
     public function getId(): int
     {

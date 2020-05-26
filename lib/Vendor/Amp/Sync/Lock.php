@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp\Sync;
+namespace Amp\Sync;
 
 /**
  * A handle on an acquired lock from a synchronization object.

@@ -1,8 +1,8 @@
 <?php
 
-namespace Test\Vendor\Amp\Parallel\Worker;
+namespace Amp\Parallel\Worker;
 
-use Test\Vendor\Amp\Promise;
+use Amp\Promise;
 
 /**
  * An interface for a parallel worker thread that runs a queue of tasks.

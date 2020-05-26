@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 /**
  * A NullCancellationToken can be used to avoid conditionals to check whether a token has been provided.

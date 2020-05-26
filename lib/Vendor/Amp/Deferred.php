@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Vendor\Amp;
+namespace Amp;
 
 /**
  * Deferred is a container for a promise that is resolved using the resolve() and fail() methods of this object.

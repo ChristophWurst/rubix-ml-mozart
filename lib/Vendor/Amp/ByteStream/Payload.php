@@ -1,10 +1,10 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Coroutine;
-use Test\Vendor\Amp\Promise;
-use function Test\Vendor\Amp\call;
+use Amp\Coroutine;
+use Amp\Promise;
+use function Amp\call;
 
 /**
  * Creates a buffered message from an InputStream. The message can be consumed in chunks using the read() API or it may
@@ -16,14 +16,14 @@ class Payload implements InputStream
     /** @var InputStream */
     private $stream;
 
-    /** @var \Test\Vendor\Amp\Promise|null */
+    /** @var \Amp\Promise|null */
     private $promise;
 
-    /** @var \Test\Vendor\Amp\Promise|null */
+    /** @var \Amp\Promise|null */
     private $lastRead;
 
     /**
-     * @param \Test\Vendor\Amp\ByteStream\InputStream $stream
+     * @param \Amp\ByteStream\InputStream $stream
      */
     public function __construct(InputStream $stream)
     {

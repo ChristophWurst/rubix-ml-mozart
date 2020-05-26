@@ -1,10 +1,10 @@
 <?php
 
-namespace Test\Vendor\Amp\ByteStream;
+namespace Amp\ByteStream;
 
-use Test\Vendor\Amp\Promise;
-use Test\Vendor\Amp\Success;
-use function Test\Vendor\Amp\call;
+use Amp\Promise;
+use Amp\Success;
+use function Amp\call;
 
 final class InputStreamChain implements InputStream
 {
