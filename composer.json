@@ -9,7 +9,7 @@
     ],
     "require": {},
     "require-dev": {
-        "coenjacobs/mozart": "^0.5.1",
+        "coenjacobs/mozart": "0.6.0-beta-2",
         "rubix/ml": "0.1.0-rc3"
     },
     "scripts": {
@@ -28,8 +28,15 @@
             "dep_directory": "/lib/Vendor/",
             "classmap_directory": "/lib/autoload/",
             "classmap_prefix": "TEST_",
+            "override_autoload": {
+                "rubix/tensor": {
+                    "classmap": [
+                        "src/"
+                    ]
+                }
+            },
             "packages": [
-                "rrubix/ml"
+                "rubix/ml"
             ]
         }
     }
